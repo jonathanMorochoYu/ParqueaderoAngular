@@ -1,1 +1,39 @@
-<p>persona works!</p>
+<p>Agregar Persona</p>
+<mat-form-field class="example-full-width">
+    <mat-label>Cédula:</mat-label>
+    <input matInput placeholder="0302915277" id="txtCedula" [(ngModel)]="persona.cedulaPer">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Nombre:</mat-label>
+    <input matInput placeholder="juan" id="txtNombre" [(ngModel)]="persona.nombrePer">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Apellido:</mat-label>
+    <input matInput placeholder="morocho" id="txtApellido" [(ngModel)]="persona.apellidoPer">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>direccion:</mat-label>
+    <input matInput placeholder="Cuenca" id="txtDireccion" [(ngModel)]="persona.direccionPer">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Correo</mat-label>
+    <input matInput placeholder="Jmorocho@" id="txtCorreo" [(ngModel)]="persona.correoPer">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Telefono:</mat-label>
+    <input matInput placeholder="0321587496" id="txtTelefono" [(ngModel)]="persona.telefonoPer">
+</mat-form-field>
+
+<br/>
+<br/>
+<button mat-raised-button color="primary"(click)="guardar()">Guardar</button>
+
+
+
+
+

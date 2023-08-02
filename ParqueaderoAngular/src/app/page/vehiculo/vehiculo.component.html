@@ -1,1 +1,35 @@
-<p>vehiculo works!</p>
+<p>Agregar Vehiculo</p>
+
+
+
+
+<mat-form-field class="example-full-width">
+    <mat-label>Codigo:</mat-label>
+    <input matInput placeholder="001" id="txtcodigo" [(ngModel)]="vehiculo.codigoVeh">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Placa:</mat-label>
+    <input matInput placeholder="ABJ-651" id="txtPlaca" [(ngModel)]="vehiculo.placaVeh">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Marca:</mat-label>
+    <input matInput placeholder="chevrolet" id="txtMarca" [(ngModel)]="vehiculo.marcaVeh">
+</mat-form-field>
+<br/>
+<mat-form-field class="example-full-width">
+    <mat-label>Color</mat-label>
+    <input matInput placeholder="rojo@" id="txtColor" [(ngModel)]="vehiculo.colorVeh">
+</mat-form-field>
+<br/>
+
+
+<br/>
+<br/>
+<button mat-raised-button color="primary"(click)="guardar()">Guardar</button>
+
+
+
+
+
