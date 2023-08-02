@@ -1,37 +1,25 @@
-<p>Agregar Persona</p>
-<mat-form-field class="example-full-width">
-    <mat-label>Cédula:</mat-label>
-    <input matInput placeholder="0302915277" id="txtCedula" [(ngModel)]="persona.cedulaPer">
-</mat-form-field>
-<br/>
-<mat-form-field class="example-full-width">
-    <mat-label>Nombre:</mat-label>
-    <input matInput placeholder="juan" id="txtNombre" [(ngModel)]="persona.nombrePer">
-</mat-form-field>
-<br/>
-<mat-form-field class="example-full-width">
-    <mat-label>Apellido:</mat-label>
-    <input matInput placeholder="morocho" id="txtApellido" [(ngModel)]="persona.apellidoPer">
-</mat-form-field>
-<br/>
-<mat-form-field class="example-full-width">
-    <mat-label>direccion:</mat-label>
-    <input matInput placeholder="Cuenca" id="txtDireccion" [(ngModel)]="persona.direccionPer">
-</mat-form-field>
-<br/>
-<mat-form-field class="example-full-width">
-    <mat-label>Correo</mat-label>
-    <input matInput placeholder="Jmorocho@" id="txtCorreo" [(ngModel)]="persona.correoPer">
-</mat-form-field>
-<br/>
-<mat-form-field class="example-full-width">
-    <mat-label>Telefono:</mat-label>
-    <input matInput placeholder="0321587496" id="txtTelefono" [(ngModel)]="persona.telefonoPer">
-</mat-form-field>
 
-<br/>
-<br/>
-<button mat-raised-button color="primary"(click)="guardar()">Guardar</button>
+
+
+<div class="sidebar">
+    <h3>Formulario de contacto</h3>
+    <form>
+      <label for="cedula">Cedula:</label>
+      <input type="textcedula" id="name" [(ngModel)]="persona.cedulaPer" name="cedula" required>
+      <label for="nombre">Nombre:</label>
+      <input type="textnombre" id="email" [(ngModel)]="persona.nombrePer" name="nombre" required>
+      <label for="direccion">Direccion:</label>
+      <input type="textdireccion" id="direccion" [(ngModel)]="persona.direccionPer" name="direccion" required>
+      
+      <label for="correo">Correo:</label>
+      <input type="textcorreo" id="correo" [(ngModel)]="persona.correoPer" name="correo" required>
+      <label for="telefono">Telefono:</label>
+      <input type="texttelefono" id="telefono" [(ngModel)]="persona.telefonoPer" name="telefono" required>
+
+      <br>
+      <button (click)="guardar()" type="button">Actualizar</button>
+    </form>
+</div>
 
 
 

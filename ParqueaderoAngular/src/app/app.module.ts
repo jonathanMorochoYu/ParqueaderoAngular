@@ -25,6 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './page/menu/menu.component';
 import { PiePaginaComponent } from './page/pie-pagina/pie-pagina.component';
+import { ListarComponent } from './page/listar/listar.component';
+import { ListarVehComponent } from './page/listar-veh/listar-veh.component';
 
 
 
@@ -38,6 +40,8 @@ import { PiePaginaComponent } from './page/pie-pagina/pie-pagina.component';
     TicketComponent,
     MenuComponent,
     PiePaginaComponent,
+    ListarComponent,
+    ListarVehComponent,
   ],
   imports: [
     BrowserModule,

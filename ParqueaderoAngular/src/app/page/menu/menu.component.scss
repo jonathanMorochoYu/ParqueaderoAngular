@@ -20,7 +20,7 @@ img.izquierda {
   }
 
   .imagen{
-    width: 260px;
+    width: 88px;
     margin: 0 20px;
 
     
@@ -29,3 +29,21 @@ img.izquierda {
   body {
     background-color: #75e77e;
 }
+
+nav {
+    float: left;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #izquierda {
+    width: 10%;
+    left: 200%;
+    float: left;
+    background-color: lightgray;
+  }

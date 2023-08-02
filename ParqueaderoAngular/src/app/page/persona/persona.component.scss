@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  h4 {
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Estilos para la barra lateral (sidebar) */
+  .sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    width: 20%;
+    justify-content: center;
+
+  }
+  
+  .sidebar h3 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .sidebar form {
+    margin-top: 20px;
+  }
+  
+  .sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .sidebar input[type="text"],
+  .sidebar input[type="email"],
+  .sidebar textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar textarea {
+    resize: vertical;
+  }
+  
+  .sidebar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el botón "Actualizar" */
+  button[type="button"] {
+    width: 100%;
+  }

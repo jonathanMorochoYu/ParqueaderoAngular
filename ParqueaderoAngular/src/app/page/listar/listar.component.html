@@ -1,0 +1,34 @@
+
+
+
+
+<table>
+  <thead class="dddd" *ngIf="listadoPersonasWS.length !== 0">
+    <tr>
+      <th>Cédula</th>
+      <th>Nombre</th>
+      <th>Direccion</th>
+      <th>Correo</th>
+      <th>Telefono</th>
+      <th>Eliminar</th>
+      <th>Actualizar</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr *ngFor="let persona of listadoPersonasWS | async">
+      <td>{{ persona.cedulaPer }}</td>
+      <td>{{ persona.nombrePer }}</td>
+      <td>{{ persona.direccionPer }}</td>
+      <td>{{ persona.correoPer }}</td>
+      <td>{{ persona.telefonoPer }}</td>
+      <td><a class="eliminar" (click)="eliminar(persona.cedula)">Eliminar</a></td>
+      <td><a class="actualizar" (click)="editar(persona)">Actualizar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+
+
+<button (click)="nuevo()">Ingresar nueva persona</button>

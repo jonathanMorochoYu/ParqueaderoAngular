@@ -1,0 +1,30 @@
+
+
+<table>
+    <thead class="dddd" *ngIf="listadoVehiWS.length !== 0">
+      <tr>
+        <th>Placa</th>
+        <th>Marca</th>
+        <th>Color</th>
+        
+        <th>Eliminar</th>
+        <th>Actualizar</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <tr *ngFor="let vehiculo of listadoVehiWS | async">
+        <td>{{ vehiculo.placaVeh }}</td>
+        <td>{{ vehiculo.marcaVeh }}</td>
+        <td>{{ vehiculo.colorVeh }}</td>
+     
+        <td><a class="eliminar" (click)="eliminar(vehiculo.placaVeh)">Eliminar</a></td>
+        <td><a class="actualizar" (click)="editar(vehiculo)">Actualizar</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br><br>
+  
+  
+  
+  <button (click)="nuevo()">Ingresar nueva Vehiculo</button>
