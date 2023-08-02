@@ -1,0 +1,31 @@
+img.izquierda {
+    float: left;
+  }
+  
+  img.derecha {
+    float: right;
+  }
+
+  p.centrado {
+    text-align: center;
+  }
+
+  img.center {
+    float: center;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagen{
+    width: 260px;
+    margin: 0 20px;
+
+    
+  }
+
+  body {
+    background-color: #75e77e;
+}
