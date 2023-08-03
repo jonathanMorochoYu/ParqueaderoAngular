@@ -42,7 +42,7 @@ export class TicketComponent {
 
   actualizar() {
     console.log(this.ticket);
-    if (!isNaN(Number(this.ticket.vehiculo.placaVeh)) && this.ticket.vehiculo.placaVeh.length === 10) {
+    if (!isNaN(Number(this.ticket.vehiculo.placaVeh)) && this.ticket.vehiculo.placaVeh.length === 1) {
       this.ticketService.save(this.ticket).subscribe(data => {
         console.log("Resultado WS update", data);
         this.router.navigate(["listarveh"]);

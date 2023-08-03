@@ -47,3 +47,39 @@ nav {
     float: left;
     background-color: lightgray;
   }
+
+  .image-title {
+    position: absolute;
+    bottom: 375px; /* Ajusta la distancia desde el borde inferior de la imagen */
+    left: 18px; /* Ajusta la distancia desde el borde izquierdo de la imagen */
+    color: rgb(56, 231, 85); /* Color del texto */
+    background-color: rgba(252, 246, 246, 0.986); /* Color de fondo con transparencia */
+    padding: -2px -2px; /* Ajusta el espaciado dentro del título */
+  }
+
+  .image-title1 {
+    position: absolute;
+    bottom: 190px; /* Ajusta la distancia desde el borde inferior de la imagen */
+    left: 18px; /* Ajusta la distancia desde el borde izquierdo de la imagen */
+    color: rgb(56, 231, 85); /* Color del texto */
+    background-color: rgba(252, 246, 246, 0.986); /* Color de fondo con transparencia */
+    padding: -2px -2px; /* Ajusta el espaciado dentro del título */
+  }
+
+  .image-title2 {
+    position: absolute;
+    bottom: 100px; /* Ajusta la distancia desde el borde inferior de la imagen */
+    left: 18px; /* Ajusta la distancia desde el borde izquierdo de la imagen */
+    color: rgb(56, 231, 85); /* Color del texto */
+    background-color: rgba(252, 246, 246, 0.986); /* Color de fondo con transparencia */
+    padding: -2px -2px; /* Ajusta el espaciado dentro del título */
+  }
+
+  .image-title3 {
+    position: absolute;
+    bottom: 278px; /* Ajusta la distancia desde el borde inferior de la imagen */
+    left: 18px; /* Ajusta la distancia desde el borde izquierdo de la imagen */
+    color: rgb(56, 231, 85); /* Color del texto */
+    background-color: rgba(252, 246, 246, 0.986); /* Color de fondo con transparencia */
+    padding: -2px -2px; /* Ajusta el espaciado dentro del título */
+  }

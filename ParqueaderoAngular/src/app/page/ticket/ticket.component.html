@@ -5,11 +5,20 @@
     <form>
       <label for="codigoTic">Codigo:</label>
       <input type="textcodigoTic" id="name" [(ngModel)]="ticket.codigoTic" name="codigoTic" required>
-      <label for="fecha">Fecha:</label>
-      <input type="textFecha" id="fecha" [(ngModel)]="ticket.fecha" name="fecha" required>
-      <label for="">Mensaje</label>
-      <input type="textplaca" id="placa" [(ngModel)]="ticket.vehiculo.placaVeh" name="placa" required>
       
+
+      <label for="hora">Hora Entrada:</label>
+      <input type="texthora" id="name" [(ngModel)]="ticket.horaEntrada "name="hora" required>
+
+      <label for="hora">Hora Salida:</label>
+      <input type="texthora" id="name" [(ngModel)]="ticket.horaSalida "name="hora" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <input type="textmensaje" id="name" [(ngModel)]="ticket.mensaje "name="mensaje" required>
+      
+      <label for="">Placa</label>
+      <input type="textplaca" id="placa" [(ngModel)]="ticket.vehiculo.placaVeh" name="placa" required>
+     
       <br>
       <button (click)="actualizar()" type="button">Guardar</button>
     </form>

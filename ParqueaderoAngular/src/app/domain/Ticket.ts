@@ -10,6 +10,12 @@ export class Ticket{
      codigoTic : number = 0;
 	 fecha: string = '';
 	 mensaje: string = '';
+     horaEntrada: string = '';
+
+     horaSalida: string = '';
+
+
+     
      vehiculo! : Vehiculo;
      factura! : Factura;
      tarifa! : Tarifa;
