@@ -6,6 +6,7 @@
         <th>Placa</th>
         <th>Marca</th>
         <th>Color</th>
+        <th>Persona</th>
         
         <th>Eliminar</th>
         <th>Actualizar</th>
@@ -16,8 +17,9 @@
         <td>{{ vehiculo.placaVeh }}</td>
         <td>{{ vehiculo.marcaVeh }}</td>
         <td>{{ vehiculo.colorVeh }}</td>
+        <td>{{ vehiculo.propietario.cedulaPer }}</td>
      
-        <td><a class="eliminar" (click)="eliminar(vehiculo.placaVeh)">Eliminar</a></td>
+        <td><a class="eliminar" (click)="eliminar2(vehiculo.placaVeh)">Eliminar</a></td>
         <td><a class="actualizar" (click)="editar(vehiculo)">Actualizar</a></td>
       </tr>
     </tbody>

@@ -25,9 +25,12 @@ export class VehiculoComponent {
     }
   }
 
+
+
+  
   enviar() {
     console.log(this.vehiculo);
-    if (!isNaN(Number(this.vehiculo.placaVeh)) && this.vehiculo.placaVeh.length === 10) {
+    if (!isNaN(Number(this.vehiculo.propietario.cedulaPer)) && this.vehiculo.propietario.cedulaPer.length === 10) {
 
     this.vehiculoService.save(this.vehiculo).subscribe(data => {
       console.log("Resultado WS save", data);
@@ -38,9 +41,24 @@ export class VehiculoComponent {
   }
   }
 
+
+
   actualizar() {
     console.log(this.vehiculo);
-    if (!isNaN(Number(this.vehiculo.placaVeh)) && this.vehiculo.placaVeh.length === 5) {
+    if (!isNaN(Number(this.vehiculo.propietario.cedulaPer)) && this.vehiculo.propietario.cedulaPer.length === 10) {
+      this.vehiculoService.save(this.vehiculo).subscribe(data => {
+        console.log("Resultado WS update", data);
+        this.router.navigate(["listarveh"]);
+        //this.reloadPage();
+      });
+    } else {
+      alert("Nro. Cedula Incorrecta");
+    }
+  }
+
+  actualizar1() {
+    console.log(this.vehiculo);
+    if (!isNaN(Number(this.vehiculo.placaVeh)) && this.vehiculo.placaVeh.length === 7) {
     this.vehiculoService.save(this.vehiculo).subscribe(data => {
       console.log("Resultado WS update", data);
       this.router.navigate(["listarveh"])

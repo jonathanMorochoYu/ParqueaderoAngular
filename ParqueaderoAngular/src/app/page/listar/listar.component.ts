@@ -27,24 +27,37 @@ export class ListarComponent {
     let params: NavigationExtras = {
       queryParams: {
         persona: persona,
-        nombre: 'Joseph'
+        nombre: 'mlorocho'
       }
     };
-    this.router.navigate(['listar'], params);
+    this.router.navigate(['persona'], params);
   }
 
-  eliminar(cedula: string) {
-    if (!isNaN(Number(cedula)) && cedula.length === 10) {
-    this.personasService.delete1(cedula).subscribe(() => {
+  eliminar(cedulaPer: string) {
+    if (!isNaN(Number(cedulaPer)) && cedulaPer.length === 10) {
+    this.personasService.delete1(cedulaPer).subscribe(() => {
       console.log("Persona eliminada con éxito.");
       this.ngOnInit()
     });
-    console.log(cedula);
+    console.log(cedulaPer);
     this.reloadPage();
     }else {
       alert("Nro. Cedula Incorrecta")
     }
   }
+
+  eliminar222(cedula:string){
+    //this.contactoService.delete(contacto.cedulaPer)
+    if (!isNaN(Number(cedula)) && cedula.length === 10) {
+    this.personasService.delete1(cedula).subscribe(data =>{
+     console.log("resultado WS eliminar", cedula, data)
+    
+   });
+   this.reloadPage(); 
+  }else {
+    alert("Nro. Cedula Incorrecta")
+  }
+   }
 
   nuevo() {
     this.router.navigate(['persona']);

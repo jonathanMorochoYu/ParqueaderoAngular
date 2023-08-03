@@ -27,14 +27,15 @@ export class ListarVehComponent {
     let params: NavigationExtras = {
       queryParams: {
         vehiculo: vehiculo,
-        nombre: 'Joseph'
+        nombre: 'morocho'
       }
     };
-    this.router.navigate(['listarveh'], params);
+    this.router.navigate(['vehiculo'], params);
   }
 
   eliminar(placaVeh: string) {
-    if (!isNaN(Number(placaVeh)) && placaVeh.length === 10) {
+    
+    if (!isNaN(Number(placaVeh)) && placaVeh.length === 7) {
     this.vehiculoService.delete1(placaVeh).subscribe(() => {
       console.log("Persona eliminada con éxito.");
       this.ngOnInit()
@@ -42,8 +43,18 @@ export class ListarVehComponent {
     console.log(placaVeh);
     this.reloadPage();
     }else {
-      alert("Nro. Cedula Incorrecta")
+      alert("Nro. Placa Incorrecta")
     }
+  }
+
+  eliminar2(placaVeh: string) {
+    this.vehiculoService.delete1(placaVeh).subscribe(() => {
+      console.log("Vehículo eliminado con éxito.");
+      this.ngOnInit();
+      
+    });
+    this.reloadPage();
+
   }
 
   nuevo() {

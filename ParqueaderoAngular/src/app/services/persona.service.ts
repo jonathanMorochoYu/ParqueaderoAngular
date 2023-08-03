@@ -15,17 +15,17 @@ export class PersonaService {
 
 
   save(persona : Persona){
-    return this.http.post<any>("http://localhost:8080/ParqueaderoPractica/rs/cliente", persona)
+    return this.http.post<any>("http://localhost:8080/parqueadero/rs/cliente", persona)
   }
 
   getAll(){
-    return this.http.get<any>("http://localhost:8080/ParqueaderoPractica/rs/cliente/lista")
+    return this.http.get<any>("http://localhost:8080/parqueadero/rs/cliente/lista1")
   }
 
 
 
   delete1(cedulaPer: string){
-    return this.http.delete<any>("http://localhost:8080/ParqueaderoPractica/rs/cliente/eliminar?cedula="+cedulaPer)
+    return this.http.delete<any>("http://localhost:8080/parqueadero/rs/cliente/id/"+cedulaPer)
   }
 
 
