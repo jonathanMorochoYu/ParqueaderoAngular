@@ -1,0 +1,38 @@
+
+
+
+
+
+<table>
+    <thead class="dddd" *ngIf="listadoTicketWS.length !== 0">
+      <tr>
+        <th>Codigo</th>
+        <th>Fecha</th>
+        <th>Mensaje</th>
+
+        <th>Vehiculo</th>
+        
+        
+        <th>Eliminar</th>
+        <th>Actualizar</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <tr *ngFor="let tarifa of listadoTicketWS | async">
+        <td>{{ tarifa.codigoTic }}</td>
+        <td>{{ tarifa.fecha }}</td>
+        <td>{{ tarifa.mensaje }}</td>
+
+        <td>{{ tarifa.vehiculo.placaVeh }}</td>
+     
+        <td><a class="eliminar" (click)="eliminar2(tarifa.codigoTic)">Eliminar</a></td>
+        <td><a class="actualizar" (click)="editar(tarifa)">Actualizar</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br><br>
+  
+  
+  
+  <button (click)="nuevo()">Ingresar nuevo Ticket</button>

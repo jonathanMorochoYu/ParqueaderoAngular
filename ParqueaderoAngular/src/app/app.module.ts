@@ -7,7 +7,6 @@ import { CabeceraComponent } from './page/cabecera/cabecera.component';
 import { PersonaComponent } from './page/persona/persona.component';
 import { VehiculoComponent } from './page/vehiculo/vehiculo.component';
 import { FacturaComponent } from './page/factura/factura.component';
-import { TicketComponent } from './page/ticket/ticket.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -27,6 +26,9 @@ import { MenuComponent } from './page/menu/menu.component';
 import { PiePaginaComponent } from './page/pie-pagina/pie-pagina.component';
 import { ListarComponent } from './page/listar/listar.component';
 import { ListarVehComponent } from './page/listar-veh/listar-veh.component';
+import { ListarTicketComponent } from './page/listar-ticket/listar-ticket.component';
+import { TicketComponent } from './page/ticket/ticket.component';
+import { ListarfacturaComponent } from './page/listarfactura/listarfactura.component';
 
 
 
@@ -42,6 +44,8 @@ import { ListarVehComponent } from './page/listar-veh/listar-veh.component';
     PiePaginaComponent,
     ListarComponent,
     ListarVehComponent,
+    ListarTicketComponent,
+    ListarfacturaComponent,
   ],
   imports: [
     BrowserModule,
